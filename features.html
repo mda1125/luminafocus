@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Features - Lumina Focus</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "primary-dark": "#dcb309",
+                        "accent-red": "#ff5252",
+                        "accent-green": "#4caf50",
+                        "accent-blue": "#2196f3",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221e10",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2c281b",
+                        "text-main": "#1c180d",
+                        "text-muted": "#9c8749",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-white font-display transition-colors duration-300">
+<div class="relative flex w-full flex-col min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-24 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e7] dark:border-b-white/10 px-4 md:px-10 py-3">
+<a href="index.html" class="flex items-center gap-4 text-text-main dark:text-white">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">light_mode</span>
+</div>
+<h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Lumina Focus</h2>
+</a>
+<div class="flex flex-1 justify-end gap-8">
+<a href="https://apps.apple.com/us/app/lumina-focus/id6755637873" target="_blank" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary-dark text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em] transition-colors shadow-sm">
+<span class="truncate">Get the App</span>
+</a>
+</div>
+</header>
+</div>
+</div>
+</div>
+
+<!-- Hero Section -->
+<div class="relative overflow-hidden">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<div class="px-4 md:px-10 lg:px-24 py-16">
+<div class="max-w-[1200px] mx-auto text-center">
+<span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Everything You Need</span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.02em] text-text-main dark:text-white mb-6">
+Powerful Features,<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">Simple Design</span>
+</h1>
+<p class="text-text-muted dark:text-gray-400 text-lg max-w-2xl mx-auto">
+Lumina Focus packs everything you need for deep, productive work into a beautiful, minimalist package.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Features Content -->
+<div class="flex-1 px-4 md:px-10 lg:px-24 py-12">
+<div class="max-w-[1200px] mx-auto">
+
+<!-- Focus Timer Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-accent-red/10 flex items-center justify-center text-accent-red">
+<span class="material-symbols-outlined text-2xl">timer</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Focus Timer</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+Flexible Session Types
+</h3>
+<ul class="space-y-3 text-text-main/80 dark:text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-red text-xl mt-0.5">target</span>
+<span><strong>Focus Sessions</strong> — Deep work periods (default 25 min, customizable 1-60 min)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-blue text-xl mt-0.5">coffee</span>
+<span><strong>Short Breaks</strong> — Quick refreshers (default 5 min, customizable 1-30 min)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">self_improvement</span>
+<span><strong>Long Breaks</strong> — Extended rest (default 15 min, customizable 1-60 min)</span>
+</li>
+</ul>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">touch_app</span>
+Intelligent Timer Controls
+</h3>
+<ul class="space-y-3 text-text-main/80 dark:text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Tap the timer display to start or pause</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Visual progress ring shows remaining time at a glance</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Timer continues accurately in the background</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Screen stays awake during active sessions</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Automation Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-[#c2950b] dark:text-primary">
+<span class="material-symbols-outlined text-2xl">autoplay</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Automation</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">cycle</span>
+Auto-Cycle Sessions
+</h3>
+<ul class="space-y-3 text-text-main/80 dark:text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Automatically progress through Focus → Short Break → Long Break</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Customize long breaks after 2, 3, or 4 focus sessions</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Sessions start automatically without manual intervention</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Visual session counter shows your cycle progress</span>
+</li>
+</ul>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">do_not_disturb_on</span>
+Smart Focus Reminders
+</h3>
+<ul class="space-y-3 text-text-main/80 dark:text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Integration with iOS Focus Mode to reduce distractions</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Choose when reminders appear: Always, First 5 Sessions, or Never</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Automatic detection of your existing Focus Mode status</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Progress Tracking Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-accent-green/10 flex items-center justify-center text-accent-green">
+<span class="material-symbols-outlined text-2xl">monitoring</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Progress Tracking</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10 text-center">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary mx-auto mb-4">
+<span class="material-symbols-outlined text-3xl">local_fire_department</span>
+</div>
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-2">Current Streak</h3>
+<p class="text-text-muted dark:text-gray-400">Track consecutive days of focused work</p>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10 text-center">
+<div class="w-16 h-16 rounded-full bg-accent-blue/10 flex items-center justify-center text-accent-blue mx-auto mb-4">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+</div>
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-2">Total Hours</h3>
+<p class="text-text-muted dark:text-gray-400">See cumulative focus time across all sessions</p>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10 text-center">
+<div class="w-16 h-16 rounded-full bg-accent-green/10 flex items-center justify-center text-accent-green mx-auto mb-4">
+<span class="material-symbols-outlined text-3xl">task_alt</span>
+</div>
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-2">Tasks Completed</h3>
+<p class="text-text-muted dark:text-gray-400">Count every accomplished task</p>
+</div>
+</div>
+</section>
+
+<!-- Task Management Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-accent-blue/10 flex items-center justify-center text-accent-blue">
+<span class="material-symbols-outlined text-2xl">checklist</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Task Management</h2>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-8 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4">Organize Your Work</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-start gap-3 text-text-main/80 dark:text-gray-300">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Add task names to each focus session</span>
+</div>
+<div class="flex items-start gap-3 text-text-main/80 dark:text-gray-300">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Quick access to your 5 most recent tasks</span>
+</div>
+<div class="flex items-start gap-3 text-text-main/80 dark:text-gray-300">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>One-tap task selection from history</span>
+</div>
+<div class="flex items-start gap-3 text-text-main/80 dark:text-gray-300">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Automatic task tracking when you complete sessions</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Customization Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-500">
+<span class="material-symbols-outlined text-2xl">palette</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Beautiful Customization</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-purple-500">format_color_fill</span>
+Color Themes
+</h3>
+<ul class="space-y-3 text-text-main/80 dark:text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Customize colors for Focus, Short Break, and Long Break</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Choose any color to match your style or mood</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Colors update throughout the app in real-time</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Default palette: Warm Coral, Calm Blue, Restful Green</span>
+</li>
+</ul>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-purple-500">dark_mode</span>
+Dark Mode
+</h3>
+<ul class="space-y-3 text-text-main/80 dark:text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Toggle dark mode independently of system settings</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Optimized design for both light and dark environments</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Audio & Haptics Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-pink-500/10 flex items-center justify-center text-pink-500">
+<span class="material-symbols-outlined text-2xl">volume_up</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Audio & Haptics</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-pink-500">music_note</span>
+Sound Options
+</h3>
+<ul class="space-y-3 text-text-main/80 dark:text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Completion sounds to celebrate finished sessions</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Toggle audio on/off with one tap</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Adjustable volume control (0-100%)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Click sounds for button interactions</span>
+</li>
+</ul>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-pink-500">vibration</span>
+Tactile Feedback
+</h3>
+<ul class="space-y-3 text-text-main/80 dark:text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Haptic feedback on interactions</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Success vibration when completing sessions</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Live Activities Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-500">
+<span class="material-symbols-outlined text-2xl">phone_iphone</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Live Activities & Lock Screen</h2>
+</div>
+<div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
+<h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-cyan-400">widgets</span>
+Dynamic Island & Lock Screen Widgets
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-cyan-400 text-xl mt-0.5">check_circle</span>
+<span>See your active timer on the lock screen</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-cyan-400 text-xl mt-0.5">check_circle</span>
+<span>Dynamic Island shows countdown progress</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-cyan-400 text-xl mt-0.5">check_circle</span>
+<span>Real-time updates without opening the app</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-cyan-400 text-xl mt-0.5">check_circle</span>
+<span>Visual consistency with your chosen colors</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Privacy Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-accent-green/10 flex items-center justify-center text-accent-green">
+<span class="material-symbols-outlined text-2xl">shield</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Privacy First</h2>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-8 border border-[#e8e2ce] dark:border-white/10">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-4">Your Data Stays Yours</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-start gap-3 text-text-main/80 dark:text-gray-300">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>No tracking or analytics</span>
+</div>
+<div class="flex items-start gap-3 text-text-main/80 dark:text-gray-300">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>No data collection</span>
+</div>
+<div class="flex items-start gap-3 text-text-main/80 dark:text-gray-300">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>All settings stored locally on your device</span>
+</div>
+<div class="flex items-start gap-3 text-text-main/80 dark:text-gray-300">
+<span class="material-symbols-outlined text-accent-green text-xl mt-0.5">check_circle</span>
+<span>Complete privacy by design</span>
+</div>
+</div>
+<div class="mt-6">
+<a href="privacy.html" class="text-primary hover:text-primary-dark font-medium transition-colors inline-flex items-center gap-1">
+Read our Privacy Policy
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="text-center py-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-4">Ready to Focus?</h2>
+<p class="text-text-muted dark:text-gray-400 mb-8 max-w-lg mx-auto">Download Lumina Focus and start your journey to better productivity today.</p>
+<a href="https://apps.apple.com/us/app/lumina-focus/id6755637873" target="_blank" class="inline-flex items-center justify-center rounded-xl h-14 px-8 bg-primary hover:bg-primary-dark text-[#1c180d] text-lg font-bold shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5">
+<span class="material-symbols-outlined mr-2">download</span>
+Download on the App Store
+</a>
+</section>
+
+</div>
+</div>
+
+<footer class="relative w-full bg-[#1c180d] text-white py-8 overflow-hidden mt-auto">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="layout-container px-4 md:px-10 lg:px-24 flex justify-center relative z-10">
+<div class="w-full flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+<p>© 2026 Lumina Focus. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+<a class="hover:text-primary transition-colors" href="https://forms.gle/Cxv7AyvDygYk7d2f8" target="_blank">Support</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
+
